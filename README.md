@@ -1,2 +1,2 @@
 # FastApi
-AI高效学习FastApi
+FastAPI框架独立学习路线笔记
