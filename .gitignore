@@ -1,0 +1,11 @@
+﻿.idea/
+.vscode/
+__github_*/
+docs/
+01_FastAPI框架独立学习路线_笔记/
+00_学习路线分类总览.md
+01_FastAPI框架独立学习路线.md
+FastAPI_AI_Agent学习路线.md
+__pycache__/
+*.pyc
+.venv/
