@@ -9,3 +9,9 @@ FastAPI_AI_Agent学习路线.md
 __pycache__/
 *.pyc
 .venv/
+.env
+*.db
+.pytest_cache/
+.ruff_cache/
+var/
+.DS_Store

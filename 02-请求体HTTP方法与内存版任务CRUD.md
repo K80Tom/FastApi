@@ -6,6 +6,10 @@
 学习主题：请求体、POST、PUT、PATCH、DELETE 与内存版任务 CRUD
 今日目标：在第 01 讲 GET 接口的基础上，完成一个可以创建、查询、更新、删除任务的内存版 TaskHub API。
 
+![第02讲：请求方法与内存任务 CRUD](images/02-crud.png)
+
+> 可编辑矢量版本：`images/02-crud.svg`。图中对照 POST、PUT、PATCH、DELETE 的语义及任务数据变化。
+
 ## 1. 下一步应该学什么
 
 你已经理解了：

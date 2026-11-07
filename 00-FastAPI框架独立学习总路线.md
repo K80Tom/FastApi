@@ -10,6 +10,10 @@
 - **建议周期**：8-10 周
 - **时间安排**：工作日每天 1 小时，周末 6-8 小时
 
+![FastAPI 独立学习总路线](images/00-roadmap.png)
+
+> 可编辑矢量版本：`images/00-roadmap.svg`。建议按章节顺序学习，并用 `taskhub_api/` 中的最终工程和测试验证每一步。
+
 学习笔记：
 - [第 01 讲：HTTP API 基础与 FastAPI 入门](01-HTTP-API基础与FastAPI入门.md)
 - [第 02 讲：请求体、HTTP 方法与内存版任务 CRUD](02-请求体HTTP方法与内存版任务CRUD.md)
@@ -17,6 +21,27 @@
 - [第 04 讲：Pydantic 模型拆分、嵌套模型与规范响应结构](04_Pydantic模型拆分嵌套与规范响应.md)
 - [第 05 讲：APIRouter、项目结构与分层入门](第05讲_APIRouter项目结构与分层入门.md)
 - [第 06 讲：业务异常与统一错误处理入门](第06讲_业务异常与统一错误处理入门.md)
+- [第 07 讲：Depends 依赖注入入门](第07讲_Depends依赖注入入门.md)
+- [第 08 讲：配置管理与环境变量](第08讲_配置管理与环境变量.md)
+- [第 09 讲：中间件、Request ID、请求日志与 CORS](第09讲_中间件RequestID请求日志与CORS.md)
+- [第 10 讲：API Key 认证与服务级保护](第10讲_APIKey认证与服务级保护.md)
+- [第 11 讲：async 异步编程与 httpx](第11讲_async异步编程与httpx.md)
+- [第 12 讲：lifespan 生命周期与 BackgroundTasks](第12讲_lifespan生命周期与BackgroundTasks.md)
+- [第 13 讲：文件上传、Form 与安全下载](第13讲_文件上传Form与安全下载.md)
+- [第 14 讲：StreamingResponse、SSE 与 WebSocket](第14讲_StreamingSSE与WebSocket.md)
+- [第 15 讲：SQLAlchemy 异步 Engine 与 Session](第15讲_SQLAlchemy异步Engine与Session.md)
+- [第 16 讲：ORM 模型、外键与关系加载](第16讲_ORM模型外键与关系加载.md)
+- [第 17 讲：数据库 CRUD、事务与分页](第17讲_数据库CRUD事务与分页.md)
+- [第 18 讲：Alembic 数据库迁移](第18讲_Alembic数据库迁移.md)
+- [第 19 讲：密码哈希与用户注册](第19讲_密码哈希与用户注册.md)
+- [第 20 讲：JWT 登录与 Bearer 鉴权](第20讲_JWT登录与Bearer鉴权.md)
+- [第 21 讲：项目角色与资源级权限](第21讲_项目角色与资源级权限.md)
+- [第 22 讲：pytest 与 TestClient 接口测试](第22讲_pytest与TestClient接口测试.md)
+- [第 23 讲：测试数据库隔离与事务清理](第23讲_测试数据库隔离与事务清理.md)
+- [第 24 讲：依赖覆盖与 Mock](第24讲_依赖覆盖与Mock.md)
+- [第 25 讲：Ruff 代码质量与 GitHub Actions](第25讲_Ruff代码质量与GitHubActions.md)
+- [第 26 讲：Docker 与 Compose 部署](第26讲_Docker与Compose部署.md)
+- [第 27 讲：TaskHub 综合项目验收与演进](第27讲_TaskHub综合项目验收与演进.md)
 
 ## 1. 学完后你应该具备的能力
 

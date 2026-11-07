@@ -4,6 +4,10 @@
 学习主题：APIRouter、API 版本、项目目录结构、schema / service / repository 分层  
 今日目标：把第 04 讲的单文件 TaskHub API 拆成更接近真实项目的多文件结构，但暂时仍然使用内存字典保存数据。
 
+![第05讲：APIRouter 与项目分层](images/05-router-layers.png)
+
+> 可编辑矢量版本：`images/05-router-layers.svg`。图中展示 router、schema、service、repository 和 core 的依赖方向。
+
 ---
 
 ## 1. 下一步应该学什么

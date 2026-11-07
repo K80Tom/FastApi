@@ -1,0 +1,54 @@
+name: TaskHub CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: taskhub_api
+    env:
+      DATABASE_URL: sqlite+aiosqlite:////tmp/taskhub-ci.db
+      JWT_SECRET_KEY: ci-only-secret-key-with-at-least-32-characters
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: |
+            taskhub_api/requirements.txt
+            taskhub_api/requirements-dev.txt
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt -r requirements-dev.txt
+
+      - name: Ruff lint
+        run: ruff check .
+
+      - name: Ruff format check
+        run: ruff format --check .
+
+      - name: Pytest
+        run: pytest -q
+
+      - name: Validate course links and diagrams
+        run: python ../tools/validate_course.py
+
+      - name: Validate Alembic migration and model drift
+        run: |
+          alembic upgrade head
+          alembic check

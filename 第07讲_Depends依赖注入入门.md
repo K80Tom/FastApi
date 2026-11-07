@@ -4,6 +4,10 @@
 学习主题：Depends、依赖注入、子依赖、router 级依赖  
 今日目标：在第 06 讲统一错误处理的基础上，把 endpoint 中"直接导入 service 模块"的方式升级成"通过 Depends 获取 service 实例"，为后续配置管理、数据库 session、当前用户注入打好基础。
 
+![第07讲：Depends 依赖注入](images/07-dependencies.png)
+
+> 可编辑矢量版本：`images/07-dependencies.svg`。图中展示子依赖、请求级对象和依赖覆盖的调用关系。
+
 ---
 
 ## 1. 下一步应该学什么

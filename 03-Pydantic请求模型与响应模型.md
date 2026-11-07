@@ -6,6 +6,10 @@
 学习主题：Pydantic、请求模型、响应模型、字段校验、response_model
 今日目标：把第 02 讲里的手动校验升级成 Pydantic 模型校验，让 TaskHub API 更接近真实项目写法。
 
+![第03讲：Pydantic 请求与响应校验](images/03-pydantic.png)
+
+> 可编辑矢量版本：`images/03-pydantic.svg`。图中分别展示请求模型拒绝非法输入、响应模型过滤内部字段两条路径。
+
 ## 1. 下一步应该学什么
 
 你现在已经学过：

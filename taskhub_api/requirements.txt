@@ -1,0 +1,13 @@
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+pydantic-settings>=2.5,<3
+email-validator>=2.2,<3
+SQLAlchemy[asyncio]>=2.0.36,<2.1
+aiosqlite>=0.20,<1
+asyncpg>=0.30,<1
+alembic>=1.14,<2
+pwdlib[argon2]>=0.2,<1
+PyJWT>=2.10,<3
+python-multipart>=0.0.20,<1
+httpx>=0.28,<1
+aiofiles>=24.1,<26

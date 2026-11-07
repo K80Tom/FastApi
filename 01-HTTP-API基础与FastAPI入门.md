@@ -6,6 +6,10 @@
 学习主题：HTTP API 基础与 FastAPI 入门
 今日目标：理解一个 Python 函数如何变成 HTTP 接口，并完成最小 FastAPI 项目。
 
+![第01讲：HTTP 请求到 FastAPI 响应](images/01-http-basic.png)
+
+> 可编辑矢量版本：`images/01-http-basic.svg`。图中展示了客户端、Uvicorn、路由匹配、路径操作函数和 JSON 响应之间的关系。
+
 ## 1. 今天要掌握什么
 
 今天先不追求完整 CRUD，只掌握 FastAPI 最核心的运行模型：

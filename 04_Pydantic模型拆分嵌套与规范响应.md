@@ -4,6 +4,10 @@
 学习主题：Pydantic 模型拆分、嵌套模型、分页响应、统一响应结构  
 今日目标：在第 03 讲 Pydantic 请求/响应模型的基础上，把 TaskHub API 的数据结构写得更像真实项目，为后面的 APIRouter 和项目分层做准备。
 
+![第04讲：Schema 拆分、嵌套与统一响应](images/04-nested-response.png)
+
+> 可编辑矢量版本：`images/04-nested-response.svg`。图中解释 Create、Update、Read、ListItem 与统一分页响应的职责。
+
 ---
 
 ## 1. 下一步应该学什么

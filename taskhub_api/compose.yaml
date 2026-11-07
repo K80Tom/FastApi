@@ -1,0 +1,35 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: taskhub
+      POSTGRES_PASSWORD: taskhub-local-password
+      POSTGRES_DB: taskhub
+    volumes:
+      - taskhub_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U taskhub -d taskhub"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  api:
+    build: .
+    environment:
+      ENVIRONMENT: production
+      DATABASE_URL: postgresql+asyncpg://taskhub:taskhub-local-password@db:5432/taskhub
+      JWT_SECRET_KEY: local-compose-only-change-this-secret-32bytes
+      API_KEY_ENABLED: "false"
+      UPLOAD_DIR: /app/var/uploads
+    ports:
+      - "8000:8000"
+    volumes:
+      - taskhub_uploads:/app/var/uploads
+    depends_on:
+      db:
+        condition: service_healthy
+    command: sh -c "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000"
+
+volumes:
+  taskhub_postgres_data:
+  taskhub_uploads:
